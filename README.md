@@ -12,12 +12,12 @@ http://java-lang-programming.com/
 
 English
 
-[Android Application Development. RxJava. Implement Observable.](http://java-lang-programming.com/en/articles/76)
+[Android Application Development. Fragment. Implement callback from Fragment to Fragment.](http://java-lang-programming.com/en/articles/76)
 
 
 日本語
 
-[Androidアプリ開発 RxJava AndroidアプリでRxJavaのObservableを使う](http://java-lang-programming.com/ja/articles/76)
+[Androidアプリ開発 Fragment FragmentからFragmentへのcallbackを実装する](http://java-lang-programming.com/ja/articles/76)
 
 Credits
 ------------
