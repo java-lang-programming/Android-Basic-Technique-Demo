@@ -23,9 +23,10 @@ task clean(type: Delete) {
 }
 
 ext {
-    buildToolsVersion = "25.0.0"
-    supportLibVersion = "25.0.1"
+    buildToolsVersion = "25.0.2"
+    supportLibVersion = "25.1.1"
     rxandroidVersion = "2.0.1"
     rxjavaVersion = "2.0.1"
     rxjavaOptional = "1.1.0"
+    threetenabp = "1.0.5"
 }
