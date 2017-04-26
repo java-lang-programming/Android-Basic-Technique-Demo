@@ -49,7 +49,12 @@ public class OverlayFragmentActivity extends AppCompatActivity implements Parent
     }
 
     @Override
+    public void onCloseBottomSheet() {
+        behavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+    }
+
+    @Override
     public void onClickChildFragmentBtn1() {
-        Toast.makeText(this, "onClickChildFragmentBtn1", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.fragment_child_btn_1), Toast.LENGTH_LONG).show();
     }
 }

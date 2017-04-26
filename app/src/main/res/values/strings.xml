@@ -19,7 +19,10 @@
     <string name="fragment_parent_btn_1">click parent fragment button 1</string>
     <string name="fragment_parent_btn_2">click parent fragment button 2</string>
     <string name="fragment_parent_text">This is Parent fragment</string>
+    <string name="fragment_btn_show_bottom_sheet">show bottomSheet</string>
+    <string name="fragment_btn_hide_bottom_sheet">hide bottomSheet</string>
 
+    <string name="btn_close_bottom_sheet">This is Parent fragment</string>
     <string name="fragment_child_btn_1">click child fragment button 1</string>
     <string name="fragment_child_text">This is Child fragment</string>
 </resources>

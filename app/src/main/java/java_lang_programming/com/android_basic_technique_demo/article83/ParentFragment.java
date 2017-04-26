@@ -67,6 +67,13 @@ public class ParentFragment extends Fragment {
             }
         });
 
+        final Button btnCloseBottomSheet = (Button) view.findViewById(R.id.btn_close_bottom_sheet);
+        btnCloseBottomSheet.setOnClickListener(v -> {
+            if (mListener != null) {
+                mListener.onCloseBottomSheet();
+            }
+        });
+
         return view;
     }
 
@@ -104,5 +111,7 @@ public class ParentFragment extends Fragment {
         void onClickClick2();
 
         void onShowBottomSheet();
+
+        void onCloseBottomSheet();
     }
 }
