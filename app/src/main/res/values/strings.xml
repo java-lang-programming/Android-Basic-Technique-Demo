@@ -14,4 +14,12 @@
 
     <string name="image_filter_dialog_fragment_title">ImageFilterDialog</string>
     <string name="image_filter_selected_msg">%1$s was selected.</string>
+    <string name="title_activity_overlay_fragment">OverlayFragmentActivity</string>
+
+    <string name="fragment_parent_btn_1">click parent fragment button 1</string>
+    <string name="fragment_parent_btn_2">click parent fragment button 2</string>
+    <string name="fragment_parent_text">This is Parent fragment</string>
+
+    <string name="fragment_child_btn_1">click child fragment button 1</string>
+    <string name="fragment_child_text">This is Child fragment</string>
 </resources>

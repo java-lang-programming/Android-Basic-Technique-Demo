@@ -35,6 +35,7 @@ import android.view.View;
 import android.widget.Button;
 
 import java_lang_programming.com.android_basic_technique_demo.article76.CallBackFromFragmentToFragmentActivity;
+import java_lang_programming.com.android_basic_technique_demo.article83.OverlayFragmentActivity;
 
 /**
  * Home Screen
@@ -52,6 +53,11 @@ public class MainActivity extends AppCompatActivity
         Button btnCfftf = (Button) findViewById(R.id.btn_cfftf);
         btnCfftf.setOnClickListener(view -> {
             moveCallBackFromFragmentToFragment();
+        });
+
+        Button btnOverlayChildren = (Button) findViewById(R.id.btn_overlay_children);
+        btnOverlayChildren.setOnClickListener(view -> {
+            moveOverlayFragmentActivity();
         });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -132,6 +138,11 @@ public class MainActivity extends AppCompatActivity
 
     private void moveCallBackFromFragmentToFragment() {
         Intent intent = new Intent(this, CallBackFromFragmentToFragmentActivity.class);
+        startActivity(intent);
+    }
+
+    private void moveOverlayFragmentActivity() {
+        Intent intent = new Intent(this, OverlayFragmentActivity.class);
         startActivity(intent);
     }
 }

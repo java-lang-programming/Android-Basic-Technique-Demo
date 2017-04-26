@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
         applicationId "java_lang_programming.com.android_basic_technique_demo"
         minSdkVersion 16
@@ -42,5 +42,7 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:' + rootProject.rxjavaVersion
     // https://github.com/JakeWharton/ThreeTenABP
     compile 'com.jakewharton.threetenabp:threetenabp:' + rootProject.threetenabp
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:25.3.1'
     testCompile 'junit:junit:4.12'
 }

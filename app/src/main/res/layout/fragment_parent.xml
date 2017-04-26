@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C6C6C"
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article83.ParentFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/fragment_parent_text" />
+
+    <Button
+        android:id="@+id/btn_click_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="@string/fragment_parent_btn_1" />
+
+    <Button
+        android:id="@+id/btn_click_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_click_1"
+        android:text="@string/fragment_parent_btn_2" />
+
+    <Button
+        android:id="@+id/btn_show_bottom_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_click_2"
+        android:text="btn_show_bottom_sheet" />
+
+</RelativeLayout>
