@@ -12,6 +12,9 @@ android {
         jackOptions {
             enabled true
         }
+        dataBinding {
+            enabled = true
+        }
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     compileOptions {

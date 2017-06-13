@@ -25,6 +25,18 @@
         <activity
             android:name=".article83.OverlayFragmentActivity"
             android:label="@string/title_activity_overlay_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".article85.LocalBroadcastManagerActivity"
+            android:label="@string/title_activity_local_broadcast_manager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".article86.DataBindingActivity"
+            android:label="@string/title_activity_data_binding"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bottonAnime.BottomSheetDialogCustomAnimationActivity"
+            android:label="@string/title_activity_bottom_sheet_dialog_custom_animation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

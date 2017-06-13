@@ -36,6 +36,8 @@ import android.widget.Button;
 
 import java_lang_programming.com.android_basic_technique_demo.article76.CallBackFromFragmentToFragmentActivity;
 import java_lang_programming.com.android_basic_technique_demo.article83.OverlayFragmentActivity;
+import java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerActivity;
+import java_lang_programming.com.android_basic_technique_demo.bottonAnime.BottomSheetDialogCustomAnimationActivity;
 
 /**
  * Home Screen
@@ -58,6 +60,16 @@ public class MainActivity extends AppCompatActivity
         Button btnOverlayChildren = (Button) findViewById(R.id.btn_overlay_children);
         btnOverlayChildren.setOnClickListener(view -> {
             moveOverlayFragmentActivity();
+        });
+
+        Button btnBroadcastManager = (Button) findViewById(R.id.btn_broadcast_manager);
+        btnBroadcastManager.setOnClickListener(view -> {
+            moveLocalBroadcastManagerActivity();
+        });
+
+        Button btnBottomSheetDialogCustomAnimation = (Button) findViewById(R.id.btn_bottom_sheet_dialog_custom_animation);
+        btnBottomSheetDialogCustomAnimation.setOnClickListener(view -> {
+            moveBottomSheetDialogCustomAnimationActivity();
         });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -143,6 +155,16 @@ public class MainActivity extends AppCompatActivity
 
     private void moveOverlayFragmentActivity() {
         Intent intent = new Intent(this, OverlayFragmentActivity.class);
+        startActivity(intent);
+    }
+
+    private void moveLocalBroadcastManagerActivity() {
+        Intent intent = new Intent(this, LocalBroadcastManagerActivity.class);
+        startActivity(intent);
+    }
+
+    private void moveBottomSheetDialogCustomAnimationActivity() {
+        Intent intent = new Intent(this, BottomSheetDialogCustomAnimationActivity.class);
         startActivity(intent);
     }
 }

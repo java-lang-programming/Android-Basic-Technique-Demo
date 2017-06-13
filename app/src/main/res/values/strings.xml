@@ -25,4 +25,11 @@
     <string name="btn_close_bottom_sheet">This is Parent fragment</string>
     <string name="fragment_child_btn_1">click child fragment button 1</string>
     <string name="fragment_child_text">This is Child fragment</string>
+    <string name="title_activity_local_broadcast_manager">LocalBroadcastManagerActivity</string>
+    <string name="title_activity_data_binding">DataBindingActivity</string>
+    <string name="title_activity_bottom_sheet_dialog_custom_animation">
+        BottomSheetDialogCustomAnimationActivity
+    </string>
+
+    <string name="msg_fragment_custom_bottom_sheet_dialog">This is CustomBottomSheetDialogFragment</string>
 </resources>
