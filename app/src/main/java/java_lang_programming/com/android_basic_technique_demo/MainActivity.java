@@ -38,6 +38,7 @@ import java_lang_programming.com.android_basic_technique_demo.article76.CallBack
 import java_lang_programming.com.android_basic_technique_demo.article83.OverlayFragmentActivity;
 import java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerActivity;
 import java_lang_programming.com.android_basic_technique_demo.bottonAnime.BottomSheetDialogCustomAnimationActivity;
+import java_lang_programming.com.android_basic_technique_demo.calculateview.CalculateViewActivity;
 
 /**
  * Home Screen
@@ -68,9 +69,10 @@ public class MainActivity extends AppCompatActivity
         });
 
         Button btnBottomSheetDialogCustomAnimation = (Button) findViewById(R.id.btn_bottom_sheet_dialog_custom_animation);
-        btnBottomSheetDialogCustomAnimation.setOnClickListener(view -> {
-            moveBottomSheetDialogCustomAnimationActivity();
-        });
+        btnBottomSheetDialogCustomAnimation.setOnClickListener(view -> moveBottomSheetDialogCustomAnimationActivity());
+
+        Button btnCalculateView = (Button) findViewById(R.id.btn_calculate_View);
+        btnCalculateView.setOnClickListener(view -> moveCalculateViewActivity());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -165,6 +167,11 @@ public class MainActivity extends AppCompatActivity
 
     private void moveBottomSheetDialogCustomAnimationActivity() {
         Intent intent = new Intent(this, BottomSheetDialogCustomAnimationActivity.class);
+        startActivity(intent);
+    }
+
+    private void moveCalculateViewActivity() {
+        Intent intent = new Intent(this, CalculateViewActivity.class);
         startActivity(intent);
     }
 }

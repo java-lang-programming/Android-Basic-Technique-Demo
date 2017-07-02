@@ -26,4 +26,25 @@
         android:layout_below="@+id/btn_cfftf"
         android:text="btn_overlay_children" />
 
+    <Button
+        android:id="@+id/btn_broadcast_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_overlay_children"
+        android:text="btn_broadcast_manager" />
+
+    <Button
+        android:id="@+id/btn_bottom_sheet_dialog_custom_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_broadcast_manager"
+        android:text="btn_bottom_sheet_dialog_custom_animation" />
+
+    <Button
+        android:id="@+id/btn_calculate_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_bottom_sheet_dialog_custom_animation"
+        android:text="CalculateViewActivity" />
+
 </RelativeLayout>

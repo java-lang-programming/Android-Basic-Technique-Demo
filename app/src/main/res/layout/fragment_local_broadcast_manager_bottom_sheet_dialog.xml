@@ -5,10 +5,9 @@
     tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerBottomSheetDialogFragment">
 
     <Button
-        android:id="@+id/btn_broadcast"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="onSendBroadcast"
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="send broadcast" />
 
 </FrameLayout>

@@ -37,6 +37,10 @@
         <activity
             android:name=".bottonAnime.BottomSheetDialogCustomAnimationActivity"
             android:label="@string/title_activity_bottom_sheet_dialog_custom_animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".calculateview.CalculateViewActivity"
+            android:label="@string/title_activity_calculate_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

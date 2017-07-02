@@ -32,4 +32,5 @@
     </string>
 
     <string name="msg_fragment_custom_bottom_sheet_dialog">This is CustomBottomSheetDialogFragment</string>
+    <string name="title_activity_calculate_view">CalculateViewActivity</string>
 </resources>
