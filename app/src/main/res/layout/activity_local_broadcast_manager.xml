@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerActivity">
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

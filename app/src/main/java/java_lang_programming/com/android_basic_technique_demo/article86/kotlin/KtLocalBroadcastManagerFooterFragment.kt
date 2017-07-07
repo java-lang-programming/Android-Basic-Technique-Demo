@@ -1,4 +1,4 @@
-package java_lang_programming.com.android_basic_technique_demo.article85.kotlin
+package java_lang_programming.com.android_basic_technique_demo.article86.kotlin
 
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleRegistry
@@ -17,8 +17,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import java_lang_programming.com.android_basic_technique_demo.R
-import java_lang_programming.com.android_basic_technique_demo.article85.Constants
-import java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerFooterFragment
+import java_lang_programming.com.android_basic_technique_demo.article86.Constants
+import java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerFooterFragment
 
 /**
  * Created by msuzuki on 2017/07/01.
@@ -33,6 +33,19 @@ class KtLocalBroadcastManagerFooterFragment : Fragment(), LifecycleRegistryOwner
 
     private lateinit var msg: TextView
 
+    companion object {
+
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @return A new instance of fragment LocalBroadcastManagerChildFragment.
+         */
+        @JvmStatic fun newInstance(): LocalBroadcastManagerFooterFragment {
+            return LocalBroadcastManagerFooterFragment()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -40,7 +53,7 @@ class KtLocalBroadcastManagerFooterFragment : Fragment(), LifecycleRegistryOwner
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater!!.inflate(R.layout.fragment_local_broadcast_manager_footer, container, false)
-        msg = view.findViewById<TextView>(R.id.msg)
+        msg = view.findViewById<TextView>(R.id.msg) as TextView
         return view
     }
 
@@ -64,32 +77,21 @@ class KtLocalBroadcastManagerFooterFragment : Fragment(), LifecycleRegistryOwner
     // Our handler for received Intents. This will be called whenever an Intent
     // with an action named "custom-event-name" is broadcasted.
     private val messageReceiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context, intent: Intent) {
+        override fun onReceive(context: Context, intent: Intent?) {
             Log.d("FooterFragment ", "BroadcastReceiver : " + lifecycle.currentState)
             // Get extra data included in the Intent
             if (lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) {
-                if (intent.action == Constants.ACTION_NAME) {
+                intent?.let { intent ->
+                    if (intent.action != Constants.ACTION_NAME) {
+                        return
+                    }
+
                     val message = intent.getStringExtra(Constants.EXTRA_NAME)
-                    val bgcolor = intent.getIntExtra(Constants.EXTRA_BG_COLOR, 0)
                     msg.text = message
-                    //getView().
-                    //val view = inflater!!.inflate(R.layout.fragment_local_broadcast_manager_footer, container, false)
-                    getView()?.setBackgroundColor(ContextCompat.getColor(activity.applicationContext, bgcolor))
+                    val bgColor = intent.getIntExtra(Constants.EXTRA_BG_COLOR, 0)
+                    getView()?.setBackgroundColor(ContextCompat.getColor(activity.applicationContext, bgColor))
                 }
             }
-        }
-    }
-
-    companion object {
-
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-
-         * @return A new instance of fragment LocalBroadcastManagerChildFragment.
-         */
-        fun newInstance(): LocalBroadcastManagerFooterFragment {
-            return LocalBroadcastManagerFooterFragment()
         }
     }
 }

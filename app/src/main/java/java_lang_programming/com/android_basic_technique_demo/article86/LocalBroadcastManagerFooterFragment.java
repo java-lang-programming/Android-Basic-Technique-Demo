@@ -1,4 +1,4 @@
-package java_lang_programming.com.android_basic_technique_demo.article85;
+package java_lang_programming.com.android_basic_technique_demo.article86;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleRegistry;
@@ -31,7 +31,6 @@ public class LocalBroadcastManagerFooterFragment extends Fragment implements Lif
         return lifecycleRegistry;
     }
 
-    private View view;
     private TextView msg;
 
     /**
@@ -53,7 +52,7 @@ public class LocalBroadcastManagerFooterFragment extends Fragment implements Lif
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_local_broadcast_manager_footer, container, false);
+        final View view = inflater.inflate(R.layout.fragment_local_broadcast_manager_footer, container, false);
         msg = view.findViewById(R.id.msg);
         return view;
     }
@@ -89,7 +88,7 @@ public class LocalBroadcastManagerFooterFragment extends Fragment implements Lif
                     String message = intent.getStringExtra(Constants.EXTRA_NAME);
                     int bgcolor = intent.getIntExtra(Constants.EXTRA_BG_COLOR, 0);
                     msg.setText(message);
-                    view.setBackgroundColor(ContextCompat.getColor(getActivity().getApplicationContext(), bgcolor));
+                    getView().setBackgroundColor(ContextCompat.getColor(getActivity().getApplicationContext(), bgcolor));
                 }
             }
         }

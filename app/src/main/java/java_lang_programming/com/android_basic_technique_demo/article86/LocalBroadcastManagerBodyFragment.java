@@ -1,4 +1,4 @@
-package java_lang_programming.com.android_basic_technique_demo.article85;
+package java_lang_programming.com.android_basic_technique_demo.article86;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -54,7 +54,8 @@ public class LocalBroadcastManagerBodyFragment extends Fragment {
         bottomSheetDialog.setTargetFragment(this, REQUEST_CODE_DIALOG);
         bottomSheetDialog.show(getFragmentManager(), "dialog");
 
-//        KtLocalBroadcastManagerBottomSheetDialogFragment bottomSheetDialog = KtLocalBroadcastManagerBottomSheetDialogFragment.Companion.newInstance();
+        // KtLocalBroadcastManagerBottomSheetDialogFragment bottomSheetDialog = KtLocalBroadcastManagerBottomSheetDialogFragment.Companion.newInstance();
+//        KtLocalBroadcastManagerBottomSheetDialogFragment bottomSheetDialog = KtLocalBroadcastManagerBottomSheetDialogFragment.newInstance();
 //        bottomSheetDialog.setTargetFragment(this, REQUEST_CODE_DIALOG);
 //        bottomSheetDialog.show(getFragmentManager(), "dialog");
     }

@@ -1,4 +1,4 @@
-package java_lang_programming.com.android_basic_technique_demo.article85;
+package java_lang_programming.com.android_basic_technique_demo.article86;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleRegistry;

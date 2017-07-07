@@ -36,7 +36,7 @@ import android.widget.Button;
 
 import java_lang_programming.com.android_basic_technique_demo.article76.CallBackFromFragmentToFragmentActivity;
 import java_lang_programming.com.android_basic_technique_demo.article83.OverlayFragmentActivity;
-import java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerActivity;
+import java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerActivity;
 import java_lang_programming.com.android_basic_technique_demo.bottonAnime.BottomSheetDialogCustomAnimationActivity;
 import java_lang_programming.com.android_basic_technique_demo.calculateview.CalculateViewActivity;
 

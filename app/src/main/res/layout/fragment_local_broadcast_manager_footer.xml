@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FF0000"
-    tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerFooterFragment">
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerFooterFragment">
 
     <TextView
         android:id="@+id/msg"

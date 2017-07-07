@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerActivity"
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerActivity"
     tools:showIn="@layout/activity_local_broadcast_manager">
 
     <FrameLayout

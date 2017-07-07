@@ -1,4 +1,4 @@
-package java_lang_programming.com.android_basic_technique_demo.article85.kotlin
+package java_lang_programming.com.android_basic_technique_demo.article86.kotlin
 
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleRegistry
@@ -12,7 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import java_lang_programming.com.android_basic_technique_demo.R
-import java_lang_programming.com.android_basic_technique_demo.article85.Constants
+import java_lang_programming.com.android_basic_technique_demo.article86.Constants
 
 /**
  * Created by msuzuki on 2017/07/01.
@@ -27,7 +27,7 @@ class KtLocalBroadcastManagerBottomSheetDialogFragment : BottomSheetDialogFragme
 
          * @return A new instance of fragment LocalBroadcastManagerBottomSheetDialogFragment.
          */
-        fun newInstance(): KtLocalBroadcastManagerBottomSheetDialogFragment {
+        @JvmStatic fun newInstance(): KtLocalBroadcastManagerBottomSheetDialogFragment {
             return KtLocalBroadcastManagerBottomSheetDialogFragment()
         }
     }
@@ -51,7 +51,6 @@ class KtLocalBroadcastManagerBottomSheetDialogFragment : BottomSheetDialogFragme
         return view
     }
 
-    // https://github.com/googlesamples/android-PictureInPicture/blob/master/kotlinApp/app/src/main/java/com/example/android/pictureinpicture/MainActivity.kt
     private fun onClickBtnSend() {
         if (lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) {
             val intent = Intent(Constants.ACTION_NAME)

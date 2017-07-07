@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerBottomSheetDialogFragment">
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerBottomSheetDialogFragment">
 
     <Button
         android:id="@+id/btn_send"

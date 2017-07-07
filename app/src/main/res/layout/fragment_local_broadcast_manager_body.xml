@@ -9,7 +9,7 @@
     android:paddingRight="4dp"
     android:paddingTop="8dp"
     android:background="#059BD7"
-    tools:context="java_lang_programming.com.android_basic_technique_demo.article85.LocalBroadcastManagerFragment">
+    tools:context="java_lang_programming.com.android_basic_technique_demo.article86.LocalBroadcastManagerFragment">
 
     <Button
         android:id="@+id/btn_open_dialog"
