@@ -54,10 +54,10 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:' + rootProject.rxjavaVersion
     // https://github.com/JakeWharton/ThreeTenABP
     compile 'com.jakewharton.threetenabp:threetenabp:' + rootProject.threetenabp
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-v4:'  + rootProject.supportLibVersion
-    testCompile 'junit:junit:4.12'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:26.+'
+    testCompile 'junit:junit:4.12'
 }
 repositories {
     mavenCentral()

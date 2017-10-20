@@ -33,4 +33,12 @@
 
     <string name="msg_fragment_custom_bottom_sheet_dialog">This is CustomBottomSheetDialogFragment</string>
     <string name="title_activity_calculate_view">CalculateViewActivity</string>
+
+    <!-- article 89 backstack -->
+    <string name="btn_add_frag">add SubFragment</string>
+    <string name="main_frag_msg_fragment">This is MainFragment.</string>
+    <string name="sub_frag_msg_fragment">This is SubFragment</string>
+    <string name="btn_popBackStack">popBackStack</string>
+    <string name="btn_popBackStack_inclusive">inclusive</string>
+    <string name="btn_add_random_frag">add Random Fragment</string>
 </resources>

@@ -41,10 +41,10 @@
         android:text="btn_bottom_sheet_dialog_custom_animation" />
 
     <Button
-        android:id="@+id/btn_calculate_View"
+        android:id="@+id/btn_back_stack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_bottom_sheet_dialog_custom_animation"
-        android:text="CalculateViewActivity" />
+        android:text="backStack" />
 
 </RelativeLayout>

@@ -14,4 +14,12 @@
 
     <string name="image_filter_dialog_fragment_title">ImageFilterDialog</string>
     <string name="image_filter_selected_msg">%1$sが選択されました</string>
+
+    <!-- article 89 backstack -->
+    <string name="btn_add_frag">add SubFragment</string>
+    <string name="main_frag_msg_fragment">This is MainFragment.</string>
+    <string name="sub_frag_msg_fragment">This is SubFragment</string>
+    <string name="btn_popBackStack">popBackStack</string>
+    <string name="btn_popBackStack_inclusive">inclusive</string>
+    <string name="btn_add_random_frag">add Random Fragment</string>
 </resources>
